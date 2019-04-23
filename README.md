@@ -1,18 +1,10 @@
-> This HuWeihuang theme created by [HuWeihuang](http://www.huweihuang.com/) modified from the original Porter [YuHsuan](https://github.com/YenYuHsuan/hexo-theme-beantech)
-> 
-> This theme has been published to the [hexo theme list](https://hexo.io/themes/).
+> This HanYajun theme created by [HanYajun](http://www.huweihuang.com/) modified from the original Porter [HuWeihuang](https://github.com/huweihuang/hexo-theme-huweihuang)
 
 # Live Demo
 
-Hu Weihuang Blog : [www.huweihuang.com](http://www.huweihuang.com/)
+HanYajun Blog : [www.hanyajun.com](http://www.hanyajun.com/)
 
-![Theme_HuWeihuang](https://res.cloudinary.com/dqxtn0ick/image/upload/v1553666111/blog/blog.jpg)
-
-# Copyright Notice
-
-**You can free to use this theme, but you need to keep the following copyright notice on the website.**
-
-<img src="https://res.cloudinary.com/dqxtn0ick/image/upload/v1537879475/header/copyright.png" width="55%">
+![Theme HanYajun](http://cdn.hanyajun.com/hanyajun_blog.png)
 
 # Install Hexo
 
@@ -36,13 +28,15 @@ npm install hexo-cli -g
 
 ## Init
 
+---
 ```bash
-git clone https://github.com/huweihuang/hexo-theme-huweihuang.git ./hexo-huweihuang
+git clone git@github.com:Han-Ya-Jun/hexo-theme-hanyajun.git ./hexo-hanyajun
 cd hexo-huweihuang
 npm install
 ```
 
 ## Modify
+---
 Modify `_config.yml` file with your own info.
 Especially the section:
 ### Deployment
@@ -86,7 +80,8 @@ You can decide to show post tags or not.
 ```yml
 home_posts_tag: true
 ```
- ![tag](https://raw.githubusercontent.com/huweihuang/hexo-theme-huweihuang/master/source/img/article/tag.png)
+
+![home_posts_tag-true](http://cdn.hanyajun.com/demo.png)
 ### Markdown render
 My markdown render engine plugin is [hexo-renderer-markdown-it](https://github.com/celsomiranda/hexo-renderer-markdown-it).
 ```yml
@@ -112,6 +107,7 @@ async("https://cdn.bootcss.com/anchor-js/1.1.1/anchor.min.js",function(){
 ```
 
 ## Hexo Basics
+---
 Some hexo command:
 ```bash
 hexo new post "<post name>" # you can change post to another layout if you want
@@ -119,7 +115,20 @@ hexo clean && hexo generate # generate the static file
 hexo server # run hexo in local environment
 hexo deploy # hexo will push the static files automatically into the specific branch(gh-pages) of your repo!
 ```
-
 # Have fun ^_^ 
-Please <a class="github-button" href="https://github.com/huweihuang/hexo-theme-huweihuang" data-icon="octicon-star" aria-label="Star huweihuang/hexo-theme-huweihuang on GitHub">Star</a> this Project if you like it! <a class="github-button" href="https://github.com/huweihuang" aria-label="Follow @huweihuang on GitHub">Follow</a> would also be appreciated!
+---
+<!-- Place this tag in your head or just before your close body tag. -->
+<script async defer src="https://buttons.github.io/buttons.js"></script>
+<!-- Place this tag where you want the button to render. -->
+Please <a class="github-button" href="https://github.com/Han-Ya-Jun/hexo-theme-hanyajun" data-icon="octicon-star" aria-label="Star huweihuang/hexo-theme-huweihuang on GitHub">Star</a> this Project if you like it! <a class="github-button" href="https://github.com/Han-Ya-Jun" aria-label="Follow @hanyajun on GitHub">Follow</a> would also be appreciated!
 Peace!
+## 相比原来的版本新增的内容：
+- SNS 新增csdn,jianshu等设置，自己修改的话可以直接去修改hexo-theme-hanyajun\themes\huweihuang\layout\_partial（底部图标）hexo-theme-hanyajun\themes\huweihuang\layout\_widget（shout_about图标）
+![image](http://cdn.hanyajun.com/demo2.png)
+- 新增每日诗词（https://www.jinrishici.com/doc/#json-fast-easy）
+ 相关文件：hexo-theme-hanyajun\themes\huweihuang\layout\_partial
+ ![image](http://cdn.hanyajun.com/demo3.png)
+
+- 如果想插入音乐下载参考这个
+https://github.com/MoePlayer/hexo-tag-aplayer
+- 原来很多的图片我采用七牛云的cdn了，相比要快很多

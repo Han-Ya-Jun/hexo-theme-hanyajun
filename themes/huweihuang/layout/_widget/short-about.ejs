@@ -43,6 +43,8 @@
                     </a>
                 </li>
             <% } %>
+            
+
 
             <% if (config.weibo_username) { %>
                 <li>
@@ -68,7 +70,7 @@
 
             <% if (config.github_username) { %>
                 <li>
-                    <a target="_blank"  href="https://github.com/<%= config.github_username %>">
+                    <a target="_blank"  href="https://github.com/<%= config.github_username %>" title="github">
                         <span class="fa-stack fa-lg">
                             <i class="fa fa-circle fa-stack-2x"></i>
                             <i class="fa fa-github fa-stack-1x fa-inverse"></i>
@@ -77,7 +79,50 @@
                 </li>
             <% } %>
             
-            
+            <% if (config.csdn_username) { %>
+                    <li>
+                        <a target="_blank"  href="https://blog.csdn.net/<%= config.csdn_username %>" title="CSDN">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-csdn fa-stack-1x fa-inverse">C</i>
+                            </span>
+                        </a>
+                    </li>
+                <% } %>
+                
+            <% if (config.aliyun_username) { %>
+                <li>
+                    <a target="_blank"  href="https://yq.aliyun.com/u/<%= config.aliyun_username %>" title="云栖社区">
+                        <span class="fa-stack fa-lg">
+                            <i class="fa fa-circle fa-stack-2x"></i>
+                            <i class="fa fa-csdn fa-stack-1x fa-inverse">云</i>
+                        </span>
+                    </a>
+                </li>
+            <% } %>
+                
+            <% if (config.jianshu_username) { %>
+                <li>
+                    <a target="_blank"  href="https://www.jianshu.com/u/<%= config.jianshu_username %>" title="简书">
+                        <span class="fa-stack fa-lg">
+                            <i class="fa fa-circle fa-stack-2x"></i>
+                            <i class="fa fa-csdn fa-stack-1x fa-inverse">简</i>
+                        </span>
+                    </a>
+                </li>
+            <% } %>
+                
+            <% if (config.mail_username) { %>
+                <li>
+                    <a target="_blank"  href=" mailto:<%= config.mail_username %>" title="mail">
+                        <span class="fa-stack fa-lg">
+                           <i class="fa fa-circle fa-stack-2x"></i>
+                           <i class="fa fa-envelope-o fa-stack-1x fa-inverse"></i>
+                        </span>
+                    </a>
+                </li>
+            <% } %>
+
             <% if (config.linkedin_username) { %>
                 <li>
                     <a target="_blank"  href="https://www.linkedin.com/in/<%= config.linkedin_username %>">

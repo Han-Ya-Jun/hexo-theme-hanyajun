@@ -59,10 +59,54 @@
 
                 <% if (config.github_username) { %>
                     <li>
-                        <a target="_blank"  href="https://github.com/<%= config.github_username %>">
+                        <a target="_blank"  href="https://github.com/<%= config.github_username %>" title="github">
                             <span class="fa-stack fa-lg">
                                 <i class="fa fa-circle fa-stack-2x"></i>
                                 <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                <% } %>
+                
+                <% if (config.csdn_username) { %>
+                    <li>
+                        <a target="_blank"  href="https://blog.csdn.net/<%= config.csdn_username %>" title="CSDN">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-csdn fa-stack-1x fa-inverse">C</i>
+                            </span>
+                        </a>
+                    </li>
+                <% } %>
+                
+                <% if (config.aliyun_username) { %>
+                    <li>
+                        <a target="_blank"  href="https://yq.aliyun.com/u/<%= config.aliyun_username %>" title="云栖社区">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-csdn fa-stack-1x fa-inverse">云</i>
+                            </span>
+                        </a>
+                    </li>
+                <% } %>
+                
+                <% if (config.jianshu_username) { %>
+                    <li>
+                        <a target="_blank"  href="https://www.jianshu.com/u/<%= config.jianshu_username %>" title="简书">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-csdn fa-stack-1x fa-inverse">简</i>
+                            </span>
+                        </a>
+                    </li>
+                <% } %>
+                
+                <% if (config.mail_username) { %>
+                    <li>
+                        <a target="_blank"  href=" mailto:<%= config.mail_username %>" title="mail">
+                            <span class="fa-stack fa-lg">
+                               <i class="fa fa-circle fa-stack-2x"></i>
+                               <i class="fa fa-envelope-o fa-stack-1x fa-inverse"></i>
                             </span>
                         </a>
                     </li>
@@ -83,16 +127,27 @@
                 <p class="copyright text-muted">
                     Copyright &copy; <%= config.author %> <%= new Date().getFullYear() %> 
                     <br>
-                    Theme by <a href="http://beantech.org">BeanTech</a> 
+                    Theme by <a href="http://www.huweihuang.com">胡伟煌</a> 
                     <span style="display: inline-block; margin: 0 5px;">
                         <i class="fa fa-heart"></i>
                     </span> 
-                    re-Ported by <a href="http://www.huweihuang.com">胡伟煌</a> | 
+                    re-Ported by <a href="http://www.hanyajun.com">韩亚军</a> | 
                     <iframe
                         style="margin-left: 2px; margin-bottom:-5px;"
                         frameborder="0" scrolling="0" width="91px" height="20px"
-                        src="https://ghbtns.com/github-btn.html?user=huweihuang&repo=hexo-theme-huweihuang&type=star&count=true" >
+                        src="https://ghbtns.com/github-btn.html?user=Han-Ya-Jun&repo=hexo-theme-huweihuang&type=star&count=true" >
                     </iframe>
+                    <br />
+                    <!--总访问量统计-->
+                    <% if(config['busuanzi']) { %>
+                        <span>
+                        <a target="_blank" href="http://www.beianbeian.com/beianxinxi/7625ff811d2421a06b38a23c0a085037.html"><img src="/img/upload/beian.png">粤ICP备17133239号-1</a>
+                        </span>
+                        <span id="busuanzi_container_site_pv" style="margin-left: 3px;">
+                            总访问量<span id="busuanzi_value_site_pv"></span>次
+                        </span>
+                    <% } %>
+                    <!--总访问量统计-->
                 </p>
             </div>
         </div>
